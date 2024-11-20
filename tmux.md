@@ -5,15 +5,31 @@
 ```bash
 # ~/.tmux.conf
 
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
 set-option -g prefix2 C-a
 
+set -g mode-keys emacs
+set -g status-keys emacs
+
+set -g mouse on # scrolling
+
 set -g base-index 1
+set -g @continuum-restore 'on'
+```
+
+Do not forget to source and installing
+```bash
+tmux source-file ~/.tmux.conf # sourcing
+set-window-option mode-keys emacs
+
+prefix I #  installing 
 ```
 
 ### Create and manage sessions
 
 ```bash
-tmux source-file ~/.tmux.conf # sourcing
 tmux ls # list
 tmux new -s cool # new named session
 tmux rename-session not-cool # rename
@@ -27,6 +43,8 @@ tmux swi -t other # switching session
 
 Use prefix `ctrl+a` or `ctrl+b`
 
+All `tmux` commands like `ls`can be run using the `:` eg. `prefix : ls`
+
 ```bash
 prefix ? # list all shorcuts
 prefix d # detach
@@ -34,6 +52,10 @@ prefix s # list sessions
 prefix $ # name session
 prefix t # big clock
 prefix : # prompt
+
+# Scroll
+
+prefix [ # enables scroll mode, q to quit
 
 # Windows
 
@@ -43,6 +65,7 @@ prefix n # next window
 prefix p # previous window
 prefix f # find window
 prefix , # name window
+swap-window -t server # swaps windows order
 prefix & # kill window
 
 # Splits

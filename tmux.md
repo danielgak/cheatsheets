@@ -17,6 +17,16 @@ set -g mouse on # scrolling
 
 set -g base-index 1
 set -g @continuum-restore 'on'
+
+# status bar black and white
+
+set status-utf8 on
+set utf8 on
+
+set -g default-terminal "screen-256color"
+
+set -g status-bg black
+set -g status-fg white
 ```
 
 Do not forget to source and installing

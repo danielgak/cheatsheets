@@ -8,20 +8,17 @@
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 
-set-option -g prefix2 C-a
-
 set -g mode-keys emacs
 set -g status-keys emacs
 
 set -g mouse on # scrolling
 
-set -g base-index 1
+set-option -g prefix2 C-a
 set -g @continuum-restore 'on'
 
-# status bar black and white
+set -g base-index 1
 
-set status-utf8 on
-set utf8 on
+# status bar black and white
 
 set -g default-terminal "screen-256color"
 

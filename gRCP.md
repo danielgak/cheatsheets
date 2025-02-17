@@ -31,3 +31,6 @@ There are 4 types of rpcs:
 - **Client streaming:** multiple client calls, server responds with one msg
 - **Bi-directional straming:** multiple calls by client and service
 
+
+
+[more](https://grpc.io/docs/guides/)

@@ -5,3 +5,4 @@ OpenID Connect is an interoperable authentication protocol based on the OAuth 2.
 It simplifies the way to verify the identity of users based on the authentication performed by an Authorization Server and to obtain user profile information in an interoperable and REST-like manner.
 
 ![image](../figures/OAuth2.0.jpg)
+

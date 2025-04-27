@@ -54,7 +54,7 @@ All `tmux` commands like `ls`can be run using the `:` eg. `prefix : ls`
 
 ```bash
 prefix ? # list all shorcuts
-prefix d # detach
+prefix d # detach (close session)
 prefix s # list sessions
 prefix $ # name session
 prefix t # big clock
